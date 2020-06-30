@@ -1,4 +1,4 @@
-# MTMAS: Multi-trait MArker Selection
+## MTMAS: Multi-trait MArker Selection
 
 MTMAS is a procedure and R script to optimize explained variance across multiple traits with a smallest possible set of markers. It uses a genetic algorithm and a penalty parameter to tune how small the marker set should be.
 
@@ -9,7 +9,7 @@ There is example data provided with GWAS summary statistics from an analysis of 
 
 If you have improvements on the script, you are welcome to make a pull request and I will integrate it in the version stored here.
 
-# Installation
+### Installation
 
 To use mtmas, you only have to 'source' the mtmas.R script like:
 
@@ -17,7 +17,7 @@ To use mtmas, you only have to 'source' the mtmas.R script like:
 source("https://github.com/ljanss/mtmas.R")
 ```
 
-# Input data
+### Input data
 
 The GWAS summary statistics are provided as one file per trait. We have developed the mtmas() function based on GAPIT output, but any other GWAS output can be used when it has at least the following three columns with matching names:
 - SNP: name for the marker (for matching across GWAS output files and marker LD file)
@@ -32,10 +32,10 @@ LDmatrix = var(geno,na.rm=TRUE,use="pair")
 
 where 'geno' is a matrix (or data frame?) with 0,1,2 coded genotypes. 
 
-# mtmas() function
+### mtmas() function
 
 Here needs a list and explanation of all arguments for the mtmas() function.
 
-# Example
+### Example
 
 An example is provided from a 5-trait mapping study.
